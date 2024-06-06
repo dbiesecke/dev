@@ -1,0 +1,20 @@
+{
+    "cells": [
+        {
+            "kind": "code",
+            "source": "['Report-FITS'] | summarize arg_max('Times Detected', *) by NetBIOS |   take 10 | render barchart\r\n",
+            "outputs": []
+        },
+        {
+            "kind": "code",
+            "source": "cmdb\r\n| take 10 ",
+            "outputs": []
+        }
+    ],
+    "metadata": {
+        "connection": {
+            "cluster": "https://kvc78gtctga8y5p8ejwcc7.northeurope.kusto.windows.net",
+            "database": "MyDatabase"
+        }
+    }
+}
